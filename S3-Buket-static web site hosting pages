@@ -1,0 +1,223 @@
+Index.html :-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic UI Design</title>
+    <style>
+        /* CSS Variables for easy color management */
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #a855f7;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-gradient-start: #e0e7ff;
+            --bg-gradient-end: #fae8ff;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Soft pastel gradient background */
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+        }
+
+        /* Centered Card Container */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .card h1 {
+            color: var(--text-dark);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        /* Aesthetic Button Styles */
+        .btn-aesthetic {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 16px 36px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px; /* Creates the pill shape */
+            cursor: pointer;
+            outline: none;
+            /* Soft colored shadow to match the button */
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.6);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Hover State */
+        .btn-aesthetic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -10px rgba(168, 85, 247, 0.7);
+        }
+
+        /* Click/Active State */
+        .btn-aesthetic:active {
+            transform: translateY(1px);
+            box-shadow: 0 5px 10px -5px rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Welcome Back</h1>
+        <p>Experience seamless design with beautifully crafted interactive elements.</p>
+        <button class="btn-aesthetic">Get Started</button>
+    </div>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+
+error.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        /* CSS Variables for consistent color management */
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #a855f7;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-gradient-start: #e0e7ff;
+            --bg-gradient-end: #fae8ff;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+        }
+
+        /* Centered Card Container */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+
+        /* Large stylised error code */
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .card h1 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* Aesthetic Link Button */
+        .btn-aesthetic {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 16px 36px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.6);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Hover State */
+        .btn-aesthetic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -10px rgba(168, 85, 247, 0.7);
+        }
+
+        /* Click/Active State */
+        .btn-aesthetic:active {
+            transform: translateY(1px);
+            box-shadow: 0 5px 10px -5px rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="error-code">404</div>
+        <h1>Looks like you're lost</h1>
+        <p>The page or file you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        
+        <a href="index.html" class="btn-aesthetic">Back to Home</a>
+    </div>
+
+</body>
+</html>
